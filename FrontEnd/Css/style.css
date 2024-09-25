@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #0a0a0a, #1c1c1c);
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #F1C40F;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #D4E157;
+}
+
+input {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #E0E0E0;
+    font-size: 1em;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #76D7C4;
+}
+
+button {
+    background: rgba(106, 130, 251, 0.9);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: rgba(252, 92, 125, 0.9);
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#cropImage {
+    margin-top: 10px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #FFB74D;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+
+    input {
+        font-size: 0.9em;
+    }
+
+    #cropImage {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .spinner {
+        border: 8px solid rgba(255, 255, 255, 0.3); 
+        border-top: 8px solid #fff; 
+        border-radius: 50%;
+        width: 50px; 
+        height: 50px; 
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+}

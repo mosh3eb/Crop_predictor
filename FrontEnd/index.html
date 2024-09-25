@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Prediction Form</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Prediction</h1>
+    <form id="cropForm">
+      <div class="form-group">
+        <label for="nitrogen">Nitrogen:</label>
+        <input type="number" id="nitrogen" name="nitrogen" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phosphorus">Phosphorus:</label>
+        <input type="number" id="phosphorus" name="phosphorus" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="potassium">Potassium:</label>
+        <input type="number" id="potassium" name="potassium" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="temperature">Temperature:</label>
+        <input type="number" id="temperature" name="temperature" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="humidity">Humidity:</label>
+        <input type="number" id="humidity" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ph">pH:</label>
+        <input type="number" id="ph" name="ph" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="rainfall">Rainfall:</label>
+        <input type="number" id="rainfall" name="rainfall" step="0.01" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Predicted Crop: <span id="predictionResult"></span></h2>
+    <img id="cropImage" style="display: none; width: 300px; height: auto;" alt="Predicted Crop Image">
+    <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+  </div>
+
+  <script src="Js/index.js"></script>
+</body>
+</html>
