@@ -4,6 +4,13 @@
 
 The Crop Prediction AI System is a machine learning application designed to predict optimal crop yields based on various environmental and soil parameters. By leveraging multiple predictive models, including Decision Tree, Logistic Regression, Naive Bayes Classifier, and Random Forest, this system provides accurate recommendations for farmers and agricultural stakeholders.
 
+
+![BEfore sending a Request](https://github.com/mosh3eb/Crop_predictor/blob/main/Examples/Ex1.png)
+
+
+![After getting a Response](https://github.com/mosh3eb/Crop_predictor/blob/main/Examples/Ex2.png)
+
+
 ## Features
 
 - **Multi-Model Prediction**: Utilizes various machine learning algorithms to enhance prediction accuracy.
