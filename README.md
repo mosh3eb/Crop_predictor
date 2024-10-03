@@ -57,7 +57,7 @@ The Crop Prediction AI System is a machine learning application designed to pred
     "humidity": <value>,
     "ph": <value>,
     "rainfall": <value>
-}
+   }
 
 
 3. The response will include the predicted crop:
