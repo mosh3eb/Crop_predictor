@@ -1,10 +1,4 @@
 fastapi
 uvicorn
-scikit-learn
 pandas
-numpy
-pandas
-numpy
-matplotlib
-seaborn
 scikit-learn
