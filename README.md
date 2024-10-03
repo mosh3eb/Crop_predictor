@@ -29,8 +29,8 @@ The Crop Prediction AI System is a machine learning application designed to pred
 1. Clone the repository:
  
    ```bash
-   git clone https://github.com/yourusername/crop-prediction-ai.git
-   cd crop-prediction-ai
+   git clone https://github.com/mosh3eb/Crop_predictor.git
+   cd Crop_predictor
 
 
 3. Install the required dependencies:
